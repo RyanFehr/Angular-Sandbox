@@ -8,12 +8,17 @@ import { LoginComponent } from './login/login.component';
 
 import { AppRoutingModule } from "./app.routing.module";
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { GatewayComponent } from './gateway/gateway.component';
+import { AutocompleteExampleComponent } from "./examples/Autocomplete/autocomplete-example.component";
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    GatewayComponent,
+    AutocompleteExampleComponent
   ],
   imports: [
     BrowserAnimationsModule,
