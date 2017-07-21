@@ -1,6 +1,14 @@
-<md-grid-list cols="4" rowHeight="25em">
-  <md-grid-tile colspan="3" class="tile-one" routerLink="/examples/Autocomplete">Autocomplete</md-grid-tile>
-  <md-grid-tile colspan="1" class="tile-two">tile-two</md-grid-tile>
-  <md-grid-tile colspan="2" class="tile-three">tile-three</md-grid-tile>
-  <md-grid-tile colspan="2" class="tile-four">tile-four</md-grid-tile>
-</md-grid-list>
+<div class="animation-wrapper">
+  <div class="three-forth-width row flip-tile" (click)="flipTile(1)" [@flipState]="tileOneDirection">
+    <div class="full-width full-height tile-side tile-one-overview">Overview</div>
+    <div class="full-width full-height tile-side tile-one-details">Details</div>
+  </div>
+  <div class="one-forth-width row flip-tile" (click)="flipTile(2)" [@flipState]="tileTwoDirection">
+    <div class="full-width full-height tile-side tile-two-overview">Overview</div>
+    <div class="full-width full-height tile-side tile-two-details">Details</div>
+  </div>
+  <div class="half-width row flip-tile" (click)="flipTile(3)" [@flipState]="tileThreeDirection">
+    <div class="full-width full-height tile-side tile-three-overview">Overview</div>
+    <div class="full-width full-height tile-side tile-three-details">Details</div>
+  </div>
+</div>
