@@ -1,16 +1,7 @@
-.animation-wrapper {
-  perspective: 800px;
-}
-
-
 .flip-tile {
   position: relative;
   transform-style: preserve-3d;
   transition: transform 1s;
-}
-
-.row {
-  height: 25em;
 }
 
 .tile-side {
@@ -28,6 +19,15 @@
 .tile-one-details {
   background-color: rgba(33, 33, 200, .3);
   transform: rotateY(179.9deg);
+}
+
+.tile-four-details {
+  background-color: rgba(217, 184, 134, 0.3);
+  transform: rotateY(179.9deg);
+}
+
+.tile-four-overview {
+  background-color: rgba(217, 184, 134, 0.3);
 }
 
 .tile-one-overview {
@@ -50,12 +50,4 @@
 
 .tile-three-overview {
   background-color: rgba(107, 208, 208, 0.3);
-}
-
-.tile-three {
-  background-color: cyan;
-}
-
-.tile-four {
-  background-color: orange;
 }

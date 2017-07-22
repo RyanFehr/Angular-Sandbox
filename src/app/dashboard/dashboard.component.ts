@@ -6,7 +6,8 @@ import {
   style,
   animate,
   transition,
-  keyframes
+  keyframes,
+  OnDestroy
 } from '@angular/core';
 
 @Component({
@@ -26,7 +27,7 @@ import {
     ])
   ]
 })
-export class DashboardComponent implements OnInit {
+export class DashboardComponent implements OnInit, OnDestroy {
 
   tileOneDirection: string = 'front';
   tileTwoDirection: string = 'front';
@@ -34,6 +35,14 @@ export class DashboardComponent implements OnInit {
   tileFourDirection: string = 'front';
 
   constructor() { }
+
+  ngOnInit() {
+    document.body.style.background = 'url(../../assets/dashboard.jpg)';
+  }
+
+  ngOnDestroy() {
+    document.body.style.background = "none";
+  }
 
   flipTile(tile: number) {
     switch (tile) {
@@ -55,8 +64,4 @@ export class DashboardComponent implements OnInit {
       }
     }
   }
-
-  ngOnInit() {
-  }
-
 }
