@@ -1,15 +1,53 @@
-.tile-one {
-    background-color: purple;
+.flip-tile {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
 }
 
-.tile-two {
-    background-color: green;
+.tile-side {
+  position: absolute;
+  backface-visibility: hidden;
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
 }
 
-.tile-three {
-    background-color: cyan;
+.tile-one-details {
+  background-color: rgba(33, 33, 200, .3);
+  transform: rotateY(179.9deg);
 }
 
-.tile-four {
-    background-color: orange;
+.tile-four-details {
+  background-color: rgba(217, 184, 134, 0.3);
+  transform: rotateY(179.9deg);
+}
+
+.tile-four-overview {
+  background-color: rgba(217, 184, 134, 0.3);
+}
+
+.tile-one-overview {
+  background-color: rgba(200, 33, 200, .3);
+}
+
+.tile-two-details {
+  background-color: rgba(0, 255, 0, .3);
+  transform: rotateY(179.9deg);
+}
+
+.tile-two-overview {
+  background-color: rgba(0, 255, 0, .3);
+}
+
+.tile-three-details {
+  background-color: rgba(107, 208, 208, 0.3);
+  transform: rotateY(179.9deg);
+}
+
+.tile-three-overview {
+  background-color: rgba(107, 208, 208, 0.3);
 }
