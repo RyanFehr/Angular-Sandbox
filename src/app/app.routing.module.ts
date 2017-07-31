@@ -1,10 +1,11 @@
-import { RouterModule, Routes } from "@angular/router";
-import { LoginComponent } from "./login/login.component";
-import { NgModule } from "@angular/core";
-import { AppComponent } from "./app.component";
-import { DashboardComponent } from "./dashboard/dashboard.component";
-import { GatewayComponent } from "./gateway/gateway.component";
-import { AutocompleteExampleComponent } from "./examples/Autocomplete/autocomplete-example.component";
+import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from './login/login.component';
+import { NgModule } from '@angular/core';
+import { AppComponent } from './app.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { GatewayComponent } from './gateway/gateway.component';
+import { AutocompleteExampleComponent } from './examples/Autocomplete/autocomplete-example.component';
+import { ThemeDemoComponent } from './theme-demo/theme-demo.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -15,9 +16,10 @@ const routes: Routes = [
     children: [
       { path: 'dashboard', component: DashboardComponent },
       { path: 'examples/Autocomplete', component: AutocompleteExampleComponent },
+      { path: 'examples/Theme', component: ThemeDemoComponent},
     ]
   },
-]
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

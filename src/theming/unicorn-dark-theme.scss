@@ -1,0 +1,16 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$unicorn-dark-app-primary: mat-palette($mat-light-green, 500, A100, 800);
+// #8bc34a
+// #B2FF59
+// #558B2F
+$unicorn-dark-app-secondary: mat-palette($mat-cyan, 500, A200, 800);
+// #00bcd4
+// #18FFFF
+// #00838F
+$unicorn-dark-app-warn: mat-palette($mat-red);
+
+$unicorn-dark-theme: mat-dark-theme($unicorn-dark-app-primary, $unicorn-dark-app-secondary, $unicorn-dark-app-warn);
+
+@include angular-material-theme($unicorn-dark-theme);

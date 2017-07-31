@@ -7,7 +7,6 @@ import {
   animate,
   transition,
   keyframes,
-  OnDestroy
 } from '@angular/core';
 
 @Component({
@@ -27,39 +26,34 @@ import {
     ])
   ]
 })
-export class DashboardComponent implements OnInit, OnDestroy {
 
-  tileOneDirection: string = 'front';
-  tileTwoDirection: string = 'front';
-  tileThreeDirection: string = 'front';
-  tileFourDirection: string = 'front';
+export class DashboardComponent implements OnInit {
+
+  tileOneDirection = 'front';
+  tileTwoDirection = 'front';
+  tileThreeDirection = 'front';
+  tileFourDirection = 'front';
 
   constructor() { }
 
-  ngOnInit() {
-    document.body.style.background = 'url(../../assets/dashboard.jpg)';
-  }
-
-  ngOnDestroy() {
-    document.body.style.background = "none";
-  }
+  ngOnInit() { }
 
   flipTile(tile: number) {
     switch (tile) {
       case 1: {
-        this.tileOneDirection = (this.tileOneDirection == 'front') ? 'back' : 'front';
+        this.tileOneDirection = (this.tileOneDirection === 'front') ? 'back' : 'front';
         break;
       }
       case 2: {
-        this.tileTwoDirection = (this.tileTwoDirection == 'front') ? 'back' : 'front';
+        this.tileTwoDirection = (this.tileTwoDirection === 'front') ? 'back' : 'front';
         break;
       }
       case 3: {
-        this.tileThreeDirection = (this.tileThreeDirection == 'front') ? 'back' : 'front';
+        this.tileThreeDirection = (this.tileThreeDirection === 'front') ? 'back' : 'front';
         break;
       }
       case 4: {
-        this.tileFourDirection = (this.tileFourDirection == 'front') ? 'back' : 'front';
+        this.tileFourDirection = (this.tileFourDirection === 'front') ? 'back' : 'front';
         break;
       }
     }

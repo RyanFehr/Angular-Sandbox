@@ -1,26 +1,28 @@
-<md-grid-list class="animation-wrapper" cols="4" rowHeight="19:18">
-  <md-grid-tile colspan="3" class="tile-one">
-    <div class="full-width full-height flip-tile" (click)="flipTile(1)" [@flipState]="tileOneDirection">
-      <div class="full-width full-height tile-side tile-one-overview">Overview</div>
-      <div class="full-width full-height tile-side tile-one-details">Details</div>
-    </div>
-  </md-grid-tile>
-  <md-grid-tile colspan="1" class="tile-two">
-    <div class="full-width full-height flip-tile" (click)="flipTile(2)" [@flipState]="tileTwoDirection">
-      <div class="full-width full-height tile-side tile-two-overview">Overview</div>
-      <div class="full-width full-height tile-side tile-two-details">Details</div>
-    </div>
-  </md-grid-tile>
-  <md-grid-tile colspan="2" class="tile-three">
-    <div class="full-width full-height flip-tile" (click)="flipTile(3)" [@flipState]="tileThreeDirection">
-      <div class="full-width full-height tile-side tile-three-overview">Overview</div>
-      <div class="full-width full-height tile-side tile-three-details">Details</div>
-    </div>
-  </md-grid-tile>
-  <md-grid-tile colspan="2" class="tile-four">
-    <div class="full-width full-height flip-tile" (click)="flipTile(4)" [@flipState]="tileFourDirection">
-      <div class="full-width full-height tile-side tile-four-overview">Overview</div>
-      <div class="full-width full-height tile-side tile-four-details">Details</div>
-    </div>
-  </md-grid-tile>
-</md-grid-list>
+<div class="component-wrapper">
+  <md-grid-list cols="4" rowHeight="19:18">
+    <md-grid-tile colspan="3" class="tile-one">
+      <div class="full-width full-height flip-tile" (click)="flipTile(1)" [@flipState]="tileOneDirection">
+        <div class="full-width full-height tile-side tile-one-overview">Overview</div>
+        <div class="full-width full-height tile-side tile-one-details">Details</div>
+      </div>
+    </md-grid-tile>
+    <md-grid-tile colspan="1" class="tile-two">
+      <div class="full-width full-height flip-tile" (click)="flipTile(2)" [@flipState]="tileTwoDirection">
+        <div class="full-width full-height tile-side tile-two-overview">Overview</div>
+        <div class="full-width full-height tile-side tile-two-details">Details</div>
+      </div>
+    </md-grid-tile>
+    <md-grid-tile colspan="2" class="tile-three">
+      <div class="full-width full-height flip-tile" (click)="flipTile(3)" [@flipState]="tileThreeDirection">
+        <div class="full-width full-height tile-side tile-three-overview">Overview</div>
+        <div class="full-width full-height tile-side tile-three-details">Details</div>
+      </div>
+    </md-grid-tile>
+    <md-grid-tile colspan="2" class="tile-four">
+      <div class="full-width full-height flip-tile" (click)="flipTile(4)" [@flipState]="tileFourDirection">
+        <div class="full-width full-height tile-side tile-four-overview">Overview</div>
+        <div class="full-width full-height tile-side tile-four-details">Details</div>
+      </div>
+    </md-grid-tile>
+  </md-grid-list>
+</div>

@@ -1,3 +1,9 @@
+@import "../../theming/unicorn-dark-colors";
+
+.component-wrapper {
+  background: $background;  
+}
+
 .flip-tile {
   position: relative;
   transform-style: preserve-3d;
@@ -17,7 +23,7 @@
 }
 
 .tile-one-details {
-  background-color: rgba(33, 33, 200, .3);
+  background-color: rgba(24, 24, 24, .3);
   transform: rotateY(179.9deg);
 }
 
@@ -31,7 +37,7 @@
 }
 
 .tile-one-overview {
-  background-color: rgba(200, 33, 200, .3);
+  background-color: rgba(24, 24, 24, .3);
 }
 
 .tile-two-details {

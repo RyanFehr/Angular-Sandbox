@@ -1,0 +1,41 @@
+@import "../../theming/unicorn-dark-colors.scss";
+
+.card-actions {
+    align-self: center
+}
+
+.fab-top-left {
+    position: absolute;
+    margin-top: -2em;
+    margin-left: 1em;
+}
+
+.input-input {
+    align-self: center;
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-around;
+}
+
+md-list {
+    margin-top: 2em;
+}
+
+md-list-item {
+    width: 100%;
+}
+
+md-list-item:hover {
+    background: $card;
+}
+
+.theme-card {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  height: 33%;
+  margin-top: 7em;
+}
+

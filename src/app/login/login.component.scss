@@ -1,29 +1,39 @@
-.flex-wrapper {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    height: 100vh;
+@import "../../theming/unicorn-dark-colors.scss";
+
+.component-wrapper {
+  background-image: linear-gradient(180deg, white, grey);
 }
 
 .flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.username-input {
-    width: 66%;
-}
-
-.password-input {
-    width: 66%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 md-card {
-    display: flex;
-    width: 33%;
-    height: 33%;
-    margin-top: 7em;
+  display: flex;
+  width: 33%;
+  height: 33%;
+  margin-top: 7em;
 }
 
+.username-button:hover {
+  color: #8bc34a;
+}
+
+.password-input {
+  width: 66%;
+}
+
+.sign-in-header-body {
+  text-align: start;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+.sign-in-header-title {
+  text-align: start;
+  margin-top: 0;
+  margin-bottom: 0;
+}
